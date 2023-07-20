@@ -20,12 +20,18 @@ body {
 
 .upload_dropZone {
   color: #0f3c4b;
-  background-color: var(--colorPrimaryPale, #c8dadf);
-  outline: 2px dashed var(--colorPrimaryHalf, #c1ddef);
-  outline-offset: -12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
   transition: outline-offset 0.2s ease-out, outline-color 0.3s ease-in-out,
     background-color 0.2s ease-out;
 }
+
+input {
+  border-radius: 10px !important;
+  padding: 14px !important;
+  margin-top: 4px !important;
+}
+
 .upload_dropZone.highlight {
   outline-offset: -4px;
   outline-color: var(--colorPrimaryNormal, #0576bd);

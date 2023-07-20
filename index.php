@@ -34,7 +34,7 @@
                     </fieldset>
                 </div>
 
-                <div class="col-lg-5">
+                <div class="col-lg-5 form_section">
                     <div class="row">
                         <div class="col-lg-6">
                             <span>Width:</span>
