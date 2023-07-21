@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $files = $_FILES['images'];
 $width = $_POST['width'];
 $height = $_POST['height'];
@@ -14,7 +16,8 @@ foreach ($files['name'] as $key => $val) {
     $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
 
     if (!in_array($fileType, $allowedTypes)) {
-        echo 'Wrong file extension';
+        $_SESSION['error'] = 'Wrong file extension';
+        header("Location: ./index.php");
         return;
     }
 
@@ -27,9 +30,6 @@ foreach ($files['name'] as $key => $val) {
             imagealphablending($resized, false);
             imagesavealpha($resized, true);
             imagejpeg($resized, 'uploads/' . $fileName);
-
-            // echo 'Successful';
-            // return;
         }
     }
 
@@ -42,9 +42,6 @@ foreach ($files['name'] as $key => $val) {
             imagealphablending($resized, false);
             imagesavealpha($resized, true);
             imagegif($resized, 'uploads/' . $fileName);
-
-            // echo 'Successful';
-            // return;
         }
     }
 
@@ -57,9 +54,9 @@ foreach ($files['name'] as $key => $val) {
             imagealphablending($resized, false);
             imagesavealpha($resized, true);
             imagepng($resized, 'uploads/' . $fileName);
-
-            // echo 'Successful';
-            // return;
         }
     }
+
+    $_SESSION['success'] = 'Resize successful';
+    header("Location: ./index.php");
 }
