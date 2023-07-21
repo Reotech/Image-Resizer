@@ -3,7 +3,6 @@
 
 <div class="container mt-5 pt-5">
     <form action="main.php" method="post" enctype="multipart/form-data">
-
         <div class="row">
             <div class="col-12">
                 <?php
@@ -28,6 +27,7 @@
                 ?>
             </div>
         </div>
+
         <div class="row d-flex align-items-center">
             <div class="col-lg-7">
                 <fieldset class="upload_dropZone text-center mb-3 p-4">
@@ -67,7 +67,6 @@
             </div>
         </div>
     </form>
-
 </div>
 
 <svg style="display:none">
