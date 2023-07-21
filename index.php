@@ -37,7 +37,7 @@
                         <use href="#icon-imageUpload"></use>
                     </svg>
 
-                    <p class="small my-2">Drag &amp; Drop background image(s) inside dashed region<br><i>or</i></p>
+                    <p class="small my-2">Drag &amp; Drop background image(s) here<br><i>or</i></p>
 
                     <input id="upload_image_background" name="images[]" data-post-name="image_background" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="position-absolute invisible" type="file" multiple accept="image/jpeg, image/png" required />
 
