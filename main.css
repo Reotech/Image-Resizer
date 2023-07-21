@@ -32,6 +32,12 @@ input {
   margin-top: 4px !important;
 }
 
+.btn {
+  border-radius: 15px !important;
+  padding: 13px !important;
+  font-size: 18px !important;
+}
+
 .upload_dropZone.highlight {
   outline-offset: -4px;
   outline-color: var(--colorPrimaryNormal, #0576bd);

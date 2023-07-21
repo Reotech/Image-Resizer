@@ -13,7 +13,7 @@
 
 <body>
     <div class="container mt-5 pt-5">
-        <form>
+        <form action="main.php" method="post" enctype="multipart/form-data">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-7">
                     <fieldset class="upload_dropZone text-center mb-3 p-4">
@@ -25,7 +25,7 @@
 
                         <p class="small my-2">Drag &amp; Drop background image(s) inside dashed region<br><i>or</i></p>
 
-                        <input id="upload_image_background" data-post-name="image_background" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="position-absolute invisible" type="file" multiple accept="image/jpeg, image/png, image/svg+xml" />
+                        <input id="upload_image_background" name="images[]" data-post-name="image_background" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="position-absolute invisible" type="file" multiple accept="image/jpeg, image/png" required />
 
                         <label class="btn btn-upload mb-3" for="upload_image_background">Choose file(s)</label>
 
@@ -38,11 +38,11 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <span>Width:</span>
-                            <input type="number" placeholder="WIDTH" class="form-control">
+                            <input type="number" placeholder="WIDTH" class="form-control" name="width" required>
                         </div>
                         <div class="col-lg-6">
                             <span>Height:</span>
-                            <input type="number" placeholder="HEIGHT" class="form-control">
+                            <input type="number" placeholder="HEIGHT" class="form-control" name="height" required>
                         </div>
                     </div>
                     <div class="row">
