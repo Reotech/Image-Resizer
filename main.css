@@ -18,14 +18,6 @@ body {
   margin: 24px;
 }
 
-.upload_dropZone {
-  color: #0f3c4b;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 15px;
-  transition: outline-offset 0.2s ease-out, outline-color 0.3s ease-in-out,
-    background-color 0.2s ease-out;
-}
-
 input {
   border-radius: 10px !important;
   padding: 14px !important;
@@ -38,6 +30,13 @@ input {
   font-size: 18px !important;
 }
 
+.upload_dropZone {
+  color: #0f3c4b;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  transition: outline-offset 0.2s ease-out, outline-color 0.3s ease-in-out,
+    background-color 0.2s ease-out;
+}
 .upload_dropZone.highlight {
   outline-offset: -4px;
   outline-color: var(--colorPrimaryNormal, #0576bd);
